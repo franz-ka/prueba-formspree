@@ -1,4 +1,9 @@
 <html>
+<head>
+  <style>
+    label { display: block; }
+  </style>
+</head>
 <body>
 probando 123
 
@@ -8,9 +13,10 @@ probando 123
 <form
   action="https://formspree.io/xrgozolr"
   method="POST"
+  enctype="multipart/form-data"
 >
   <label>
-    Nombre:
+    Email:
     <input type="text" name="_replyto">
   </label>
   <label>
@@ -24,6 +30,10 @@ probando 123
   <label>
     Campo Y:
     <textarea name="campo_y"></textarea>
+  </label>
+  <label>
+    Una foto o archivo:
+    <input type="file" name="foto_o_archivo">
   </label>
 
   <!-- your other form fields go here -->
